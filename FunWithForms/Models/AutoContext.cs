@@ -12,7 +12,7 @@ namespace FunWithForms.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = "Server=(localdb)\\mssqllocaldb;Database=MusicTesting;Trusted_Connection=True;";
+            var connectionString = "Server=(localdb)\\mssqllocaldb;Database=AndreyCarTesting;Trusted_Connection=True;";
 
             optionsBuilder.UseSqlServer(connectionString);
 

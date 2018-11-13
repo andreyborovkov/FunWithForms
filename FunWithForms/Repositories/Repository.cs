@@ -44,6 +44,13 @@ namespace FunWithForms.Repositories
             Delete(entity);
         }
 
+        public void Update(T entity)
+        {
+            db.Attach(entity);
+            db.Entry(entity).State = EntityState.Modified;
+            db.SaveChanges();
+        }
+
         public void Save()
         {
             // Save will persist all modifications to entities to the database.
